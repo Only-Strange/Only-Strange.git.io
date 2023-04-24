@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="style.css">
   <style src="style.css"></style>
-  <script src="script.js"></script>
   <script src="source.js"></script>
 </head>
 
