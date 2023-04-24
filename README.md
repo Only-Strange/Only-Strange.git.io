@@ -40,7 +40,7 @@
 
     </html>
 
-  const question = document.querySelector(".question");
+const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
 const spnQtd = document.querySelector(".spnQtd");
 const textFinish = document.querySelector(".finish span");
@@ -105,3 +105,129 @@ function loadQuestion() {
 }
 
 loadQuestion();
+  
+  export default [
+    {
+    question: "segundo a histologia, qual é o grau de lesão do LSIL?",
+    answers: [
+        { option: "NIC 1", correct: true },
+        { option: "NIC 2/3", correct: false },
+        { option: "Carcinoma invasivo", correct: false },
+
+    ],
+},
+
+{
+    question: "Quais células da ectocérvice são predominantes no LSIL?",
+    answers: [
+      { option: "Velhas", correct: false },
+      { option: "Maduras", correct: true },
+      { option: "Imaturas", correct: false },
+    ],
+  },
+
+
+{
+        question: "Como está a relação núcleo citoplásmatica no LSIL?",
+        answers: [
+          { option: "RNC alto", correct: true },
+          { option: "RNC normal", correct: false },
+          { option: "RNC baixo", correct: false },
+        ],
+      },
+
+{
+    question: "A lesão que o HPV causa no grau do LSIL é",
+    answers: [
+      { option: "Irreverssível", correct: false },
+      { option: "Reverssível", correct: true },
+      { option: "Impossível de determinar", correct: false },
+    ],
+  },
+{
+    question: "Quais são os tipos de HPV mais frequente no LSIL?",
+    answers: [
+      { option: "Tipo 16 e 18", correct: false },
+      { option: "Tipo 31, 45 e 51", correct: false },
+      { option: "Tipo 61 e 70", correct: false },
+      { option: "Tipo 6 e 11", correct: true },
+    ],
+  },
+];
+  
+  @import url('https://fonts.googleapis.com/css2?family=Verdana, Geneva, Tahoma:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background: linear-gradient(90deg, rgba(0,191,255) 0%, rgba(0,0,139) 100%);
+}
+
+body h1 {
+    color: springgreen
+}
+
+body h2 {
+  color: aqua;
+}
+
+main {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.spnQtd {
+  text-align: end;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #9400D3;
+  color: wellow;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.finish button {
+  text-align: center;
+}
